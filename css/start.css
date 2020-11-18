@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+#myback{
+width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+    pointer-events: none; 
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 0;
+}
+#ting{
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+}
+#tglow{
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+}
+#titlet{
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2;
+}
+#titlelogo{
+    width: 55%;
+    height: 35%;
+    margin-left: 22%;
+    pointer-events: none; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 1;
+    z-index: 0;
+}
+#flame{
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 1;
+    z-index: 0;
+}
+#starticon{
+    width: 12%;
+    height: 20%;
+    left: 25%;
+    top: 30%;
+    pointer-events: none; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+}
+#continuueicon{
+    width: 12%;
+    height: 20%;
+    pointer-events: none; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+}
+#optionicon{
+    width: 12%;
+    height: 20%;
+    pointer-events: none; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+}
+#exiticon{
+    width: 12%;
+    height: 20%;
+    pointer-events: none; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+}

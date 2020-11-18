@@ -63,45 +63,117 @@ width: 100%;
     opacity: 1;
     z-index: 0;
 }
-#starticon{
-    width: 12%;
-    height: 20%;
+/* .iconclass{
+    height: 100%;
+    width: 50%;
     left: 25%;
-    top: 30%;
-    pointer-events: none; 
-    background-size: cover;
-    background-repeat: no-repeat;
+    flex-direction: column;
     position: absolute;
-    opacity: 1;
-    z-index: 2;
+    background-color: aquamarine;
+    opacity: 0.5;
+    z-index: 5;
+} */
+.iconclass{
+    position: relative;
+    width: 53%;
+    height: 700px;
+    margin: 0 auto;
+    padding-top: 13%;
+    display: flex;
+    right: 0%;
+    flex-direction: row;
+    justify-content: space-between;
 }
-#continuueicon{
-    width: 12%;
-    height: 20%;
-    pointer-events: none; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    opacity: 1;
+
+.box1{
+    width: 22%;
+    height: 700px;
+    position: relative;
+    text-align: center;
+    margin: 1px;
+    left: 0;
+    z-index: 3;
+}
+.subbox1{
+    width: 100%;
+    height: 51%;
+    position: relative;
+    text-align: center;
+    margin: 1px;
+    left: 0;
+    z-index: 3;
+}
+
+.subbox2{
+    width: 100%;
+    height: 51%;
+    position: relative;
+    text-align: center;
+    margin: 1px;
+    left: 0;
+    z-index: 3;
+}
+.subbox3{
+    width: 100%;
+    height: 51%;
+    position: relative;
+    text-align: center;
+    margin: 1px;
+    left: 0;
+    z-index: 3;
+}
+.subbox4{
+    width: 100%;
+    height: 51%;
+    position: relative;
+    text-align: center;
+    margin: 1px;
+    left: 0;
+    z-index: 3;
+}
+.box2{
+    width: 22%;
+    height: 700px;
+    position: relative;
+    text-align: center;
+    margin: 1px;
+    right: 0;
+    z-index: 3;
+}
+
+#starticon{
+    position: absolute; 
+    width: 100%; 
+    pointer-events: none;
+    height: 54%; 
     z-index: 2;
+    left: 0;
+}
+#continueicon{
+    position: absolute; 
+    width: 100%; 
+    pointer-events: none;
+    height: 54%; 
+    z-index: 2; 
+    bottom: 0;   
+    right: 0;
+
+
 }
 #optionicon{
-    width: 12%;
-    height: 20%;
-    pointer-events: none; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    opacity: 1;
+    position: absolute; 
+    width: 100%; 
+    height: 54%; 
     z-index: 2;
+    left: 0;
 }
 #exiticon{
-    width: 12%;
-    height: 20%;
-    pointer-events: none; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    opacity: 1;
+    position: absolute; 
+    width: 100%; 
+    pointer-events: none;
+    height: 54%;  
     z-index: 2;
+    bottom: 0;   
+    right: 0;
+
 }

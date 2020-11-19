@@ -177,3 +177,16 @@ width: 100%;
     right: 0;
 
 }
+#startbase{
+    height: 10%;
+    width: 1000px;
+}
+/* #startbase:hover{
+    height: 90%;
+    width: 1000px;
+    transform: rotate(13deg);
+    text-emphasis: none;
+    transition: 0.2s;
+} */
+
+

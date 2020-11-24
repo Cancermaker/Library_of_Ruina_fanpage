@@ -182,40 +182,58 @@ width: 100%;
 #startbase1{
     height: 0%;
     width: 0px;
+    z-index: 1;
 }
 #startbase2{
     height: 0%;
     width: 0px;
+    z-index: 1;
 }
 #startbase3{
     height: 0%;
     width: 0px;
+    position: absolute;
+    z-index: 1;
 }
 #startbase4{
     height: 0%;
     width: 0px;
+    z-index: 1;
+    position: absolute;
 }
 .subbox1:hover > #startbase1{
-    margin-top: 25px;
-    height: 80%;
+    margin-top: 35px;
+    height: 70%;
     width: 1000px;
     transform: rotate(13deg);
     text-emphasis: none;
     transition: 0.2s;
 }
 .subbox2:hover > #startbase2{
-    margin-top: 25px;
-    height: 80%;
+    margin-top: 35px;
+    height: 70%;
     width: 1000px;
     transform: rotate(13deg);
     text-emphasis: none;
     transition: 0.2s;
 }
 .subbox3:hover > #startbase3{
-
+    padding-top: 250px;
+    height: 70%;
+    width: 1000px;
+    right: 80px;
+    transform: rotate(-15deg);
+    text-emphasis: none;
+    transition: 0.2s;
 }
 .subbox4:hover > #startbase4{
-
+    padding-top: 250px;
+    height: 70%;
+    width: 1000px;
+    right: 80px;
+    transform: rotate(-15deg);
+    text-emphasis: none;
+    transition: 0.2s;
 }
 /* #startbase:hover{
     height: 90%;

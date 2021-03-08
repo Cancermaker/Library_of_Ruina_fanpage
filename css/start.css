@@ -158,8 +158,6 @@ width: 100%;
     z-index: 2; 
     bottom: 0;   
     right: 0;
-
-
 }
 #optionicon{
     position: absolute; 
@@ -247,10 +245,34 @@ width: 100%;
     position: relative;
     height: 300px;
     width: 300px;
-    left: 35%;
     top: 100px;
     z-index: 5;
 }
 .startbtn:hover{
     opacity: 0.8;
 }
+
+.dummybtn{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    top: 100px;
+    z-index: 5;}
+ .dummybtn:hover{
+        opacity: 0.8;
+    }
+    
+.srticon h1{
+position: relative;
+background-color: aliceblue;
+z-index: 10;
+opacity: 0.5;
+text-align: center;
+}
+.duyicon h1{
+    position: relative;
+    background-color: aliceblue;
+    z-index: 10;
+    opacity: 0.5;
+    text-align: center;
+    }

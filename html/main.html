@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
+    <!-- <div class="start_1">
+        <h1 onclick="start()"> start</h1>
+    </div> -->
+
 <div class="wrap">
     <header>
-        <h1 class="now_floor">케테르</h1>
         <div class="Phase">
             <img src="/image/EmotionCardSelection_Title_Level1.png" alt="Phase1" onclick="phase1()">
             <img src="/image/EmotionCardSelection_Title_Level2.png" alt="Phase2" onclick="phase2()">
@@ -17,14 +20,21 @@
         </div>
     </header>
     <div class="content">
-        <div class="left_arrow">test</div>
-        <div class="main_icon">
-            <canvas id="freq" width="1024" height="525"></canvas>
+        <div class="left_arrow" onclick="move_left()">
+            <img src="/image/AfterIcon_3_6.png" alt="left">
         </div>
-        <div class="right_arrow">test</div>
-
+        <div class="main_icon">
+            <canvas id="freq" width="512" height="260"></canvas>
+        </div>
+        <div class="right_arrow"onclick="move_right()">
+            <img src="/image/AfterIcon_3_6_1.png" alt="left">
+        </div>
+        
     </div>
 </div>
+<footer>
+    <h1 class="now_floor">test</h1>
+</footer>
 <script src="/js/main.js"></script>
 </body>
 </html>

@@ -2,39 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/javascript" src="/js/main_canvas.js"></script>
     <link rel="stylesheet" href="/css/main.css">
 </head>
-<body>
-    <!-- <div class="start_1">
-        <h1 onclick="start()"> start</h1>
-    </div> -->
 
-<div class="wrap">
-    <header>
-        <div class="Phase">
-            <img src="/image/EmotionCardSelection_Title_Level1.png" alt="Phase1" onclick="phase1()">
-            <img src="/image/EmotionCardSelection_Title_Level2.png" alt="Phase2" onclick="phase2()">
-            <img src="/image/EmotionCardSelection_Title_Level3.png" alt="Phase3" onclick="phase3()">
-        </div>
-    </header>
-    <div class="content">
-        <div class="left_arrow" onclick="move_left()">
-            <img src="/image/AfterIcon_3_6.png" alt="left">
-        </div>
-        <div class="main_icon">
-            <canvas id="freq" width="512" height="260"></canvas>
-        </div>
-        <div class="right_arrow"onclick="move_right()">
-            <img src="/image/AfterIcon_3_6_1.png" alt="left">
-        </div>
-        
+<body onload="initPage()">
+    <div class="wrap">
+    <div class="Phase">
+        <img src="/image/EmotionCardSelection_Title_Level3.png" alt="p3" onclick="phase3()">
+        <img src="/image/EmotionCardSelection_Title_Level2.png" alt="p2" onclick="phase2()">
+        <img src="/image/EmotionCardSelection_Title_Level1.png" alt="p1" onclick="phase1()">
     </div>
+<div class="content">
+    <img src="/image/AfterIcon_3_6.png" alt="left">
+    <canvas id="renderer"></canvas>
+    <img src="/image/AfterIcon_3_6_1.png" alt="left">
 </div>
-<footer>
-    <h1 class="now_floor">test</h1>
-</footer>
-<script src="/js/main.js"></script>
+</div>
 </body>
 </html>

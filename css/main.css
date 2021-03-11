@@ -12,6 +12,10 @@ body{
 }
 
 
+h1{
+    color: wheat;
+    text-align: center;
+}
 html,body{
     overflow: hidden;
 }
@@ -44,6 +48,7 @@ height: 100px;
 .content img{
     margin: 0;
 width: 100px;
-height: 150px;
+height: 200px;
+
 
 }

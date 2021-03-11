@@ -13,25 +13,53 @@ const M_audio3 = new Audio('/audio/Malkuth/Malkuth battle 3.mp3');
 const R_audio1 = new Audio('/audio/kether/Kether battle1.mp3');
 const R_audio2 = new Audio('/audio/kether/Kether battle2.mp3');
 
+
+
+
+
+
+
+
+
+
+
 let canvas, ctx, center_x, center_y, radius, bars, 
 x_end, y_end, bar_height, bar_width, audio1, audio2, audio3, floor,
 frequency_array;
-
+floor = 0;
+let now_bg = document.getElementsByTagName("body");
+const bg_0 = new Image("/image/bg/bg_0.png");
+const bg_1 = new Image("/image/bg/bg_1.png");
 
 function left_movement() {
-
+ 
 }
 function right_movement() {
+    // document.getElementsByTagName("body").style.background_image = bg_1;
 
 }
 
-
-
-
-
-
-
-
+function floor_movement(floo) {
+    switch (floo) {
+        case 0:
+            now_bg.style.background_image = bg_0;
+            break;
+        case 1:
+        now_bg.style.background_image = bg_1;
+        break;
+        default:
+            break;
+    }
+}
+function phase1() {
+    initPage(H_audio1)
+}
+function phase2() {
+    initPage(H_audio2)
+}
+function phase3() {
+    initPage(H_audio3)
+}
 
 
 
@@ -50,11 +78,13 @@ function right_movement() {
 
 
 bars = 700;
-bar_width = 1.5;
+bar_width = 2;
 //========================================== 음악재생
-function initPage(){//initpage = 페이지가 로드될 경우 실행 
-
-audio = new Audio('/audio/kether/Kether battle1.mp3'); //음악 경로
+function initPage(aud){//initpage = 페이지가 로드될 경우 실행 
+    if(audio.play()){
+        audio.load();
+    }
+audio = aud; //음악 경로
 context = new (window.AudioContext || window.webkitAudioContext)();
 analyser = context.createAnalyser();
 
@@ -66,10 +96,9 @@ analyser.connect(context.destination);
 
 
 frequency_array = new Uint8Array(analyser.frequencyBinCount);
-
 audio.play(); //음악 재생
 audio.loop = true; //음악 반복
-audio.volume = 1; //음악 볼륨 절반
+audio.volume = 0.7; //음악 볼륨 절반
 animationLooper(); //캔버스 호출
 }
 //========================================== 음악재생
@@ -80,12 +109,12 @@ function animationLooper(){
 //장치 크기로 설정
 canvas = document.getElementById("renderer"); //html안에서 캔버스 찾기
 canvas.width = window.innerWidth / 1.5; //창의 크기에 따라 가로 크기조절
-canvas.height = window.innerHeight / 1.5; //창의 크기에 따라 세로 크기조절
+canvas.height = window.innerHeight / 1; //창의 크기에 따라 세로 크기조절
 ctx = canvas.getContext("2d");  //ctx = 캔버스
 
 // 창의 중심을 찾아서 크기조절
 center_x = canvas.width / 2; //캔버스의 크기 = 창 크기 / 2
-center_y = canvas.height / 2;
+center_y = canvas.height / 3;
 radius = center_x / 3; // 원의 크기
 
 // 배경스타일 지정
@@ -98,7 +127,7 @@ radius = center_x / 3; // 원의 크기
 //원 그리기
 ctx.beginPath();
 ctx.arc(center_x,center_y,radius,0,2*Math.PI);
-
+ctx.strokeStyle = "black";
 ctx.stroke(); // 그리기
 
 analyser.getByteFrequencyData(frequency_array);
@@ -107,7 +136,7 @@ for(var i = 0; i < bars; i++){
     //원을 같은 부분으로 나눔
     rads = Math.PI * 2 / bars;
     
-    bar_height = frequency_array[i]*0.5;
+    bar_height = frequency_array[i]*0.8;
     
     // set coordinates 여긴 모름
     x = center_x + Math.cos(rads * i) * (radius);

@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript" src="/js/main_canvas.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body onload="initPage()">
-    <div class="wrap">
+    <div class="fillter">
+
     <div class="Phase">
         <img src="/image/EmotionCardSelection_Title_Level3.png" alt="p3" onclick="phase3()">
         <img src="/image/EmotionCardSelection_Title_Level2.png" alt="p2" onclick="phase2()">
         <img src="/image/EmotionCardSelection_Title_Level1.png" alt="p1" onclick="phase1()">
     </div>
-    <h1>앙기모찌</h1>
 <div class="content">
     <img src="/image/AfterIcon_3_6.png" alt="left" onclick="left_movement()">
     <canvas id="renderer"></canvas>

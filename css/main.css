@@ -1,54 +1,10 @@
-*{
-    margin: 0 auto;
-    padding: 0;
-}
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url(/image/bg/kether_bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: black;
-}
-
-
-h1{
-    color: wheat;
-    text-align: center;
-}
-html,body{
-    overflow: hidden;
-}
-.test{
-    position: relative;
-    z-index: 11;
-    background-color: black;
-}
-#renderer{
-    position: relative;
-
-}
-.content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.Phase{
-    position: relative;
-    width: 100%;
-    height: 100px;
-}
-.Phase img{
-    position: relative;
-    float: right;
-margin-left: 50px;
-width: 100px;
-height: 100px;
-}
-.content img{
-    margin: 0;
-width: 100px;
-height: 200px;
-
-
-}
+*{margin: 0 auto;padding: 0;}
+body{margin: 0;padding: 0;background-image: url(/image/bg/bg_0.png);background-size: cover;background-repeat: no-repeat;}
+h1{color: wheat;text-align: center;}
+html,body{overflow: hidden;}
+#renderer{position: relative;}
+.content{display: flex;justify-content: space-between;align-items: center;}
+.content img{z-index: 100;}
+.Phase{position: relative;width: 100%;height: 100px;}
+.Phase img{position: relative;float: right;margin-left: 50px;width: 100px;height: 100px;}
+.content img{margin: 0;width: 100px;height: 200px;}

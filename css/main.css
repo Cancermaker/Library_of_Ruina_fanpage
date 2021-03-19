@@ -1,5 +1,5 @@
 *{margin: 0 auto;padding: 0;}
-body{margin: 0;padding: 0;background-image: url(/image/bg/bg_0.png);background-size: cover;background-repeat: no-repeat;}
+body{margin: 0;padding: 0;background-image: url(/image/bg/bg_0.png);background-size: cover;background-repeat: no-repeat;background-color: black;}
 h1{color: wheat;text-align: center;}
 html,body{overflow: hidden;}
 #renderer{position: relative;}
